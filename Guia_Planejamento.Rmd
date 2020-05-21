@@ -1,0 +1,208 @@
+---
+title: "Planejamento de levantamento amostral"
+author: "Renato Rodrigues Silva"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    df_print: paged
+    number_sections: yes
+    toc: yes
+    toc_float: yes
+---
+
+#Introdução
+
+- Material baseado fortemente no livro Elementos de Amostragem, escrito por Heleno Bolfarine e Wilton O. Bussab (2004), com o intuito de auxiliar pesquisadores a planejar um levantamento amostral. 
+
+- Um bom levantamento amostral permite a obtenção de uma amostra representativa e, consequentemente,
+resultados confiáveis e livres de viés.
+
+- A proposta aqui é apresentar os conceitos teóricos a partir do guia de levantamento de amostral proposto por Bolfarine e Bussab (2004) 
+
+- O enfoque será conceitual e não haverá necessidade de conhecimento prévio algum. 
+
+#Etapas do planejamento 
+
+##Identificação dos objetivos e populações
+
+Como em todo projeto de pesquisa, a primeira etapa de um planejamento de levantamento amostral também é o estabelecimento dos objetivos.
+
+###Definir o objetivo geral, operacionais e alternativos
+
+- A definição de objetivos transcende a estatística e não é necessariamente papel do estatístico defini-los. No entanto, ele precisa ser informado para poder definir os próximos passos. 
+
+- Por muitas vezes, o estatístico pode ajudar o pesquisador na tarefa de tornar esses objetivos em algo que seja possível de ser mensurado e, posteriormente, analisado estatisticamente.
+
+- De uma forma bem prática, pode-se dizer que o objetivo geral é o que se pretende conhecer, a questão a ser respondida.
+
+- Exemplo: Quais são os acessos e domínio que os docentes da UFG têm com relação à tecnologia digital de informação e comunicação (TDIC) ?
+
+
+###Sugestão para definição de objetivos
+
+- Frequentemente, um levantamento amostral 
+tem **múltiplos objetivos**, mas para efeitos práticos **é conveniente prender-se a um conjunto pequeno de questões-chaves**. As **demais questões** farão parte de um conjunto de **objetivos secundários** (Bolfarine e Bussab, 2004).
+
+- **Deve-se evitar a tentação de acrescentar questões só para aproveitar o levantamento  !!!**.
+
+###Identificar as unidades elementares, amostrais e/ou de resposta
+
+- Uma vez objetivos estabelecidos, deve-se atentar sobre o que ou quem vai ser mensurado.
+
+- Unidade elementar, é o objeto ou entidade portadora das informações que pretende-se coletar.  Pode ser uma pessoa,  classe de alunos, escola  etc.  Retomando o exemplo anterior, a unidade elementar seria os docentes da UFG.
+
+- Unidade amostral é a entidade que será selecionada por meio de sorteio em um plano amostral. Pode ser formada por uma única unidade elementar ou por várias. 
+
+- Exemplo: Pode-se fazer uma lista de docentes e telefonar para os sorteados. Ou, pode-se fazer uma lista da sala que eles trabalham, fazer o sorteio e entrevistar todos os docentes daquela sala. No primeiro caso, a unidade elementar e amostral é a mesma, docentes. No segundo caso, a unidade elementar é o docente mas a amostral é a sala.
+
+- Unidade de resposta é a entidade do qual se extrai as respostas. Exemplo, no caso de se fazer uma entrevista com discentes do CEPAE quem responde é o responsável do educando (a).
+
+###Identificar variáveis e atributos
+
+- Associada a cada unidade elementar existirá uma ou mais características de interesse à pesquisa. São as chamadas variáveis ou atributos (Bolfarine e Bussab, 2004).
+
+- Exemplo: Faixa etária dos discentes de graduação, idade dos docentes, experiência prévia com ensino à distância (sim ou não) e etc ...
+
+
+###Estabelecer a população alvo
+
+- O objetivo da amostragem é fazer afirmações sobre uma população baseando-se na informação de uma amostra. Logo, não conhecendo exatamente qual é a população do estudo, não é possível ter clareza para quem pode-se estender as conclusões  (Bolfarine e Bussab, 2004).
+
+
+- Em teoria de amostragem, tem-se diversos conceitos de população que estão intimamente ligados. O primeiro deles é o conceito de população alvo.
+
+- **População** é a reunião de todas as unidades elementares. No entanto, dependendo do conceito deve-se definir mais precisamente o que vem ser a **população alvo**.
+
+- No caso do estudo de acesso de TDIC por parte dos docentes. Se caso for decidido que o propósito da pesquisa é planejar o ensino de aulas emergenciais remotas à curto prazo. Algumas questões surgem. Os professores afastados deveriam ser considerados? E os que estão trabalhando em atividades administrativas? 
+
+- Assim, **dependendo do objetivo dos pesquisadores**, pode-se definir como população alvo os docentes que estão em pleno exercício de docência no ano de 2020.
+Em outras palavras, a população alvo é a reunião de todos as unidades elementares das quais pretende-se estudar. 
+
+
+###Sistema de Referência e população referenciada
+
+- A obtenção da amostra será feita via sorteio. Assim, precisamos de uma lista que relacione todas as unidades elementares da população. Fontes que descrevem o universo a ser investigado formam o chamado **sistema de referências**. 
+
+- Logo, para fazer a pesquisa com os docentes, pode-se recorrer a uma tabela com todas as matrículas SIAPE ativas. Se for decidido que a pesquisa será feita via telefone, deve-se ter uma tabela que vincule cada matrícula ao número de telefone do docente. 
+
+- A matrícula é um exemplo de identificador, poderia ser o CPF, RG e etc ...
+
+- **População referenciada** é a reunião de todas as unidades elementares que constam no sistema de referência. Note que pode ser diferente da população alvo.
+
+- Vamos supor um outro exemplo, uma pesquisa sobre os discentes do UFG Inclui. Imagine que por algum motivo temos acesso a uma lista que não possui 100% das matrículas dos alunos, mas apenas próximo disso. Então teríamos uma população referenciada menor do que a população alvo.
+
+- **População amostrada** para explicar esse conceito vamos revisitar o exemplo anterior. Imagine que após o sorteio dos discentes do UFG inclui percebemos que **algumas** matrículas não foram incluídas. Dessa forma, tem-se uma população amostrada. Veja que isso é muito diferente de disparar o email para todos (sem sorteio) e ter uma adesão de 40%. 
+
+###Parâmetros populacionais
+
+- Com os conceitos de interesse da pesquisa traduzidos em variáveis mensuráveis, necessita-se tornar bem claro quais as características populacionais (parâmetros) que deverão ser estimados pela amostra.
+
+- Exemplo, suponha que nossa população seja os docentes da UFG e que a variável de interesse seja ter acesso à internet (sim ou não). 
+
+- Nesse caso, tem-se uma variável dicotômica (que assume 0 e 1), e consequentemente, pode-se definir uma variável aleatória número de professores com acesso à internet. 
+
+- O parâmetro de interesse é a proporção de professores com acesso à internet.
+
+- Observe que a definição de parâmetros é algo mais técnico, que o estatístico vai estar mais confortável em escolher. Mas de qualquer forma é bom todos saberem.
+
+
+##Coleta das informações
+
+###Escolher o tipo de investigação
+
+- O censo consiste em entrevistar e obter informações de todos os elementos da população. Quando possível  é a melhor opção. No entanto, devido a questões financeiras (custos) ou operacionais, por muitas vezes, não é uma opção viável. No caso do censo não ser viável a outra alternativa é fazer amostragem
+
+- Quando a universidade dispara um questionário via email para todos os docentes, está implícito que a universidade tem a intenção de obter a informação de todos eles. Caso, todos os docentes respondam as perguntas do questionário, ter-se-á um censo populacional.
+
+
+###Estabelecer o modo de coleta
+
+- Agora serão enfatizados alguns aspectos operacionais, o primeiro deles é estabelecer o modo de coleta. 
+
+- A coleta dos dados pode ser feita por meio de telefones, email, entrevistas pessoais e etc ... A equipe deve escolher a melhor forma de acordo com o contexto da pesquisa. 
+
+- Por exemplo, em uma pesquisa cujo o objetivo é estudar o acesso de internet dos discentes da graduação, é temerário coletar os dados utilizando um questionário via correio eletrônico, uma melhor opção poderia ser entrevista por telefone, ou via preenchimento de um formulário impresso.
+
+###Elaborar o questionário
+
+- Para elaborar um questionário tem-se inúmeras opções de tipos de perguntas. Segundo o site [mindminers](https://mindminers.com/blog/tipos-de-perguntas-usados-em-questionarios/), tem-se 7 tipos de perguntas: perguntas fechadas de múltipla escolha, perguntas fechadas dicotômicas, perguntas fechadas de resposta única, perguntas fechadas tipo matriz, perguntas fechadas ranking, pergunta de resposta aberta e perguntas tipo Net Promoter Score NPS. 
+
+- **VISITE O SITE !!!** [mindminers](https://mindminers.com/blog/tipos-de-perguntas-usados-em-questionarios/)
+
+###Sugestão sobre questionário
+
+- Segundo Bolfarine e Bussab, (2004), deve-se dar preferência aos questionários com perguntas fechadas. 
+
+- Deve-se atentar que ao utilizar questões abertas teremos um texto. Nesse texto haverá ruídos de toda sorte: palavras sem significados (artigos, preposições, caracateres especiais), respostas desconexas com a pergunta e etc... E, por muitas vezes, em um texto há um discurso que deve ser interpretado. 
+
+- Existe  uma área da estatística / computação para lidar com esse problema, chama-se **mineração de texto**. Convém mencionar que lidar com esse tipo de informação é um trabalho sofisticado e que demanda bastante tempo. Foge do escopo desse material.
+
+
+
+##Planejamento e seleção da amostra
+
+###Amostra probabilística
+
+- Existem diversas classificações e nomenclaturas para amostras, como
+a finalidade desse texto é prática, vou usar o menor número possível.
+
+- Como já foi visto, o propósito da amostra é o de fornecer informações que permitam a generalização de seus resultados dentro de limites aceitáveis de dúvidas (Bolfarine e Bussab 2004).
+
+- Com essa finalidade, estatísticos trabalham com **amostras probabilísticas** e  utilizam planos amostrais para serem selecionados as **unidades amostrais**.
+
+- Uma amostra é classificada como probabilística quando se tem um mecanismo probabilístico no plano de seleção da amostra (Bolfarine e Bussab 2004).
+
+- Uma amostra probabilística **DEVE** satisfazer as seguintes condições:
+
+1. Todos os elementos da população apresentam uma probabilidade maior que zero para serem selecionados na amostra.
+
+2. Conhecer precisamente a probabilidade para cada elemento, também chamada de probabilidade de inclusão. [netquest](https://www.netquest.com/blog/br/blog/br/amostragem-probabilistica-nao-probabilistica).
+
+- Agora vejamos um exemplo. Com o intuito de estudar o acesso de discentes da UFG com relação à internet, a universidade resolve disparar um email como forma de questionário. Adicionalmente, coloca um prazo para a resposta. 
+
+- Pergunta: se o aluno não tem acesso à internet, como ele vai participar do questionário? Antes que alguém argumente "mas 50% responderam", outro questionamento retórico surge. Daqueles que não tem acesso à internet, qual a probabilidade dele ser incluso na amostra? Resposta: Probabilidade igual a **zero**.
+
+###Definir o plano amostral
+
+- O plano amostral é um procedimento objetivo adotado por parte do pesquisador na seleção operacional da amostra. 
+
+Existem diversos tipos de planos amostrais. Aqui serão citados dois:
+
+- Amostragem Aleatória Simples (AAS): Seleciona-se sequencialmente cada unidade amostral com igual probabilidade, de tal forma que cada amostra tenha a mesma chance de ser escolhida. A seleção  pode ser feita com ou sem reposição.
+
+
+- Amostragem Estratificada: A população é dividida em estratos. Utilizando como exemplo o estudo dos docentes da UFG (os estratos podem ser os institutos, departamentos, tempo de experiência e etc ...). Em cada estrato, a AAS é  utilizada na seleção de uma amostra de cada estrato.
+
+
+###Estimadores 
+
+-  A ideia do processo de amostragem é fazer cálculos na amostra que possam ser generalizados para toda a população. Por exemplo, 
+
+- Considere que o  parâmetro populacional de interesse seja a proporção de docentes com acesso a internet e que foi definido que o tamanho da amostra seja $n=10$ (métodos para determinação do tamanho da amostra serão vistos mais adiante).
+Considere ainda que o plano amostral foi amostragem simples com reposição.
+
+- Obviamente que a proporção de acesso à internet da população não é conhecida, caso contrário, o estudo não precisaria ser feito. Logo, serão feitos cálculos na amostra com o intuito de inferir a proporção da população
+
+- Informalmente, estimadores são funções de elementos da amostra construídas para estimar um parâmetro de interesse. Os valores assumidos por essa função são denominados de estimativa.
+
+- Exemplo: 
+
+- Um possível estimador para a proporção é dado por $\hat{p} = \frac{\sum_{i=1} Y_i}{n}$. Informalmente $Y_i$,  assume o papel das possíveis respostas (0 ou 1).
+Tecnicamente, as $Y_i$ são denominadas de variáveis aleatórias.
+
+
+##Erro amostral
+
+- Nesse ponto é razoável assumir que há uma diferença entre o valor do parâmetro populacional e da estimativa calculada baseada na amostra. Pois, a amostra é apenas uma parte da população.
+
+- Esta diferença pode ocorrer apenas devido à particular amostra escolhida, ou devido a fatores externos do plano amostral (Bolfarine e Bussab 2004). O  erro associado a particular amostra escolhida é denominado **erro amostral**. 
+
+- Temos que saber esse conceito porque o dimensionamento da amostra vai depender do erro amostral, na realidade do erro padrão.
+
+  
+##Tamanho da amostra
+
+- O erro padrão do estimador, decresce à medida que aumenta o tamanho da amostra. Assim, um ponto chave de um levantamento amostral é a fixação  do tamanho da amostra.
+
+- Uma amostra muito grande pode implicar em custos desnecessários, enquanto que uma amostra pequena pode tornar a pesquisa inconclusiva.
+
